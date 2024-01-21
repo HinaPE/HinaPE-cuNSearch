@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.25)
 
-project(cuNSearch LANGUAGES CXX CUDA)
+project(HinaPE-cuNSearch LANGUAGES CXX CUDA)
 find_package(CUDAToolkit REQUIRED)
 enable_language(CUDA)
 # to remove warning
@@ -98,6 +98,6 @@ option(BUILD_DEMO "Build example of how to use this library."
 if (BUILD_DEMO)
     add_subdirectory(demo)
 endif (BUILD_DEMO)
-add_subdirectory(hdk)
+add_subdirectory(HinaPE-hdk)
 unset(USE_DOUBLE_PRECISION CACHE)
 
